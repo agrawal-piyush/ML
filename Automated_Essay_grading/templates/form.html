@@ -1,0 +1,56 @@
+{%extends 'Base.html'%}
+
+  {% block content %}
+  Essay Writing :Test your Knowledge
+  {%endblock%}
+
+
+
+      {% block body %}
+      <div class="container form-group required">
+        <form class="text-center border border-light p-5" action="{{ url_for('score')}}" method="POST">
+
+            <p class="h4 mb-4">Enter Your Essay</p>
+
+            <p>Here you have to enter 10 lines</p>
+            <label for="t1"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 1 </h4></label>
+            <textarea name="t1" rows="1" cols="80" style="resize:none"placeholder="Enter Line 1"required></textarea> <br>
+            <label for="t2"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 2 </h4></label>
+
+            <textarea name="t2" rows="1" cols="80"style="resize:none"placeholder="Enter Line 2"required></textarea><br>
+            <label for="t3"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 3 </h4></label>
+
+            <textarea name="t3" rows="1" cols="80"style="resize:none"placeholder="Enter Line 3"required></textarea><br>
+            <label for="t4"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 4 </h4></label>
+
+            <textarea name="t4" rows="1" cols="80"style="resize:none"placeholder="Enter Line 4"required></textarea><br>
+            <label for="t5"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 5 </h4></label>
+
+            <textarea name="t5" rows="1" cols="80"style="resize:none"placeholder="Enter Line 5"required></textarea><br>
+            <label for="t6"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 6 </h4></label>
+
+            <textarea name="t6" rows="1" cols="80"style="resize:none"placeholder="Enter Line 6"required></textarea><br>
+            <label for="t7"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 7 </h4></label>
+
+            <textarea name="t7" rows="1" cols="80"style="resize:none"placeholder="Enter Line 7"required></textarea><br>
+            <label for="t8"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 8 </h4></label>
+
+            <textarea name="t8" rows="1" cols="80"style="resize:none"placeholder="Enter Line 8"required></textarea><br>
+            <label for="t9"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 9 </h4></label>
+
+            <textarea name="t9" rows="1" cols="80"style="resize:none"placeholder="Enter Line 9"required></textarea><br>
+            <label for="t10"style="text-align:center; padding-right:4px ;vertical-align:middle"> <h4> 10 </h4></label>
+
+            <textarea name="t10" rows="1" cols="80"style="resize:none" placeholder="Enter Line 10"required></textarea><br>
+
+
+
+            <button class="btn btn-info btn-block" type="submit">Submit</button>
+
+
+        </form>
+
+      </div>
+    {% endblock %}
+
+    <!-- Default form subscription -->
